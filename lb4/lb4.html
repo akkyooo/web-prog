@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Замовлення товарів</title>
+</head>
+<body>
+    <header>
+        <h1>Інтернет-магазин</h1>
+        <p>Заповніть форму для оформлення замовлення.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Форма замовлення товарів</h2>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Особисті дані покупця</legend>
+                    <p>
+                        <label for="fullname">Ім'я та прізвище:</label>
+                        <input type="text" id="fullname" name="fullname"
+                               placeholder="Введіть ваше ім'я" required>
+                    </p>
+                    <p>
+                        <label for="email">Електронна пошта:</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="example@gmail.com">
+                    </p>
+                    <p>
+                        <label for="phone">Номер телефону:</label>
+                        <input type="tel" id="phone" name="phone"
+                               placeholder="+380">
+                    </p>
+                    <p>
+                        <label for="birthday">Дата народження:</label>
+                        <input type="date" id="birthday" name="birthday">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Інформація про замовлення</legend>
+                    <p>
+                        <label for="product">Назва товару:</label>
+                        <input type="text" id="product" name="product"
+                               placeholder="Введіть назву товару">
+                    </p>
+                    <p>
+                        <label for="quantity">Кількість товарів:</label>
+                        <input type="number" id="quantity" name="quantity"
+                               min="1" max="20" value="1">
+                    </p>
+                    <p>Оберіть категорію товару:</p>
+                    <p>
+                        <input type="radio" id="electronics" name="category"
+                               value="electronics">
+                        <label for="electronics">Електроніка</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="clothes" name="category"
+                               value="clothes">
+                        <label for="clothes">Одяг</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="accessories" name="category"
+                               value="accessories">
+                        <label for="accessories">Аксесуари</label>
+                    </p>
+                    <p>Додаткові послуги:</p>
+                    <p>
+                        <input type="checkbox" id="gift" name="services"
+                               value="gift">
+                        <label for="gift">Подарункове пакування</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="delivery" name="services"
+                               value="delivery">
+                        <label for="delivery">Кур'єрська доставка</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="warranty" name="services"
+                               value="warranty">
+                        <label for="warranty">Додаткова гарантія</label>
+                    </p>
+                    <p>
+                        <label for="payment">Спосіб оплати:</label>
+                        <select id="payment" name="payment">
+                            <option value="card">Банківська картка</option>
+                            <option value="cash">Готівка</option>
+                            <option value="transfer">Переказ на рахунок</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="date">Бажана дата доставки:</label>
+                        <input type="date" id="date" name="date">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Додаткова інформація</legend>
+                    <p>
+                        <label for="address">Адреса доставки:</label>
+                        <textarea id="address" name="address"
+                                  rows="3" cols="40"
+                                  placeholder="Введіть адресу доставки"></textarea>
+                    </p>
+                    <p>
+                         <label for="file">Додати список бажаних товарів:</label>
+                         <input type="file" id="file" name="file">
+                    </p>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Оформити замовлення">
+                    <input type="reset" value="Очистити форму">
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Виконав: Заїченко Андрій КН-25-1</p>
+    </footer>
+</body>
+</html>
